@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Dự Án Nhóm</title>
+</head>
+<body>
+
+    <h1>Chào mừng đến với trang web của nhóm!</h1>
+
+    <script>
+        // 1. Lấy thời gian hiện tại theo giờ hệ thống (0 - 23)
+        let gio = new Date().getHours();
+        let loiChao = "";
+
+        // 2. Sử dụng cấu trúc điều kiện if-else để phân loại buổi trong ngày
+        if (gio >= 5 && gio < 12) {
+            loiChao = "Chào buổi sáng! 🌅 Chúc bạn một ngày làm việc tràn đầy năng lượng.";
+        } else if (gio >= 12 && gio < 18) {
+            loiChao = "Chào buổi chiều! ☀️ Cố gắng hoàn thành nốt các mục tiêu nhé.";
+        } else if (gio >= 18 && gio < 22) {
+            loiChao = "Chào buổi tối! 🌆 Chúc bạn có buổi tối thư giãn.";
+        } else {
+            loiChao = "Chào buổi đêm! 🌙 Khuya rồi, nhớ giữ gìn sức khỏe và nghỉ ngơi sớm nhé.";
+        }
+
+        // 3. Hiển thị thông báo chào mừng theo thời gian thực
+        alert(loiChao);
+    </script>
+
+</body>
+</html>
