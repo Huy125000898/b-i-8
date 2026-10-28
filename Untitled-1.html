@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra điểm số</title>
+</head>
+<body>
+    <h2>Chương trình xếp loại học lực</h2>
+
+    <script>
+        // Dán đoạn code JS vào đây
+        let nhapDiem = prompt("Nhập vào số điểm của bạn (từ 0 đến 10):");
+        let diem = parseFloat(nhapDiem);
+
+        if (isNaN(diem) || diem < 0 || diem > 10) {
+            alert("Vui lòng nhập một số hợp lệ từ 0 đến 10!");
+        } else {
+            if (diem > 8) {
+                alert("Xếp loại: Giỏi! Xuất sắc quá.");
+            } else if (diem > 6.5) {
+                alert("Xếp loại: Khá! Làm tốt lắm.");
+            } else if (diem >= 5) {
+                alert("Xếp loại: Trung bình. Chúc mừng bạn đã đạt!");
+            } else {
+                alert("Xếp loại: Yếu. Rất tiếc, hãy cố gắng hơn!");
+            }
+        }
+    </script>
+</body>
+</html>
